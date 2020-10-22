@@ -1,0 +1,42 @@
+--- # MiniProyecto CV
+fotografia: avatar.jpg
+informacion_pagina:
+    autor: Javier Mazariegos
+    titulo: Mi CV
+informacion_personal:
+    nombre_completo: Javier Alejandro Mazariegos Godoy
+    pais_de_nacimiento: Guatemala
+    idiomas:
+        - Espanol,
+        - Ingles
+    edad: 18
+    acerca_de_mi: Soy una persona organizada y con una gran motivacion que logra adaptarse a cualquier circunstancia y doy siempre lo mejor de mi. Me gusta proporcionar soluciones a problemas especificos a traves de la tecnologia. Me gusta aprender y trabajar en equipo, ya que se generan mas ideas. 
+    experiencia: Desarrollo de aplicaciones web
+    intereses:
+        - Programacion,
+        - Leer,
+        - Viajar,
+        - Deportes,
+        - Postres
+informacion_profesional:
+    tecnologias: 
+        - Python,
+        - Java,
+        - PHP,
+        - C#
+    educacion: Universidad Francisco Marroquin
+informacion_referencias:
+    referencias_laborales: 
+        - Monica de Zelaya, 12356789
+        - Alfredo Rodriguez, 78945632
+        - Carlos Mendez, 78451236
+        - Christopher Lingle,78952031
+    referencia_personal: 
+        - Jose Antonio, 12345678
+        - Javier Rene, 98765432
+        - Anthony Gomez, 45678912
+        - Juan Lopez, 12378945
+Links:
+    CV: /CV
+    Facebook: https://www.facebook.com/javier.mazariegos.18
+    Instagram: https://www.instagram.com/mazariegos_128/

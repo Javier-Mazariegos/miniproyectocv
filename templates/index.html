@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="contenedor1">
+    <img src="{{image_file}}" alt="avatar">
+</div>
+
+<div class="contenedor2">
+    <h5>{{my_data['informacion_personal']['nombre_completo']}}</h5>
+</div>
+<div class="separdor">
+</div>
+
+<div class="contenedor3">
+    <div class="p1">{{my_data['informacion_personal']['acerca_de_mi']}}</div>
+</div>
+
+{%for link in my_data['Links']%}
+<a class="links" href="{{my_data['Links'][link]}}"><h5>{{link}}</h5></a>
+{%endfor%}
+
+{% endblock %}

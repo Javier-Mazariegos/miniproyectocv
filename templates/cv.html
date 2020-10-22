@@ -1,0 +1,82 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+        <div class="contenedorD">
+
+            <div class="contenedorDS">
+                <img src="{{image_file}}" alt="avatar">
+            </div>
+
+            <div class="contenedorDI">
+                <br>
+                <hr class="linea">
+                <h3 >{{my_data['informacion_personal']['nombre_completo']}}</h3>
+                <br>
+                <hr class="linea">
+                <h6 >{{my_data['informacion_personal']['pais_de_nacimiento']}}</h6>
+                <br>
+                <hr class="linea">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+
+        </div>
+
+
+        <div class="contenedorI">
+            <div>
+                <h4>Informacion personal</h4>
+                <hr class="linea2">
+                <span class="badge badge-secondary span1">Edad</span>
+                <p>{{my_data['informacion_personal']['edad']}} años</p>
+                <br>
+                <span class="badge badge-secondary  span1">Idiomas</span>
+                    {%for i in my_data['informacion_personal']['idiomas']%}
+                    <p>{{i}}</p>
+                    {%endfor%}
+                <br>
+                <span class="badge badge-secondary span1">Acerca de mi</span>
+                <br>
+                <div class="p1">{{my_data['informacion_personal']['acerca_de_mi']}}</div>
+                <span class="badge badge-secondary span1">Experiencia</span>
+                <p>{{my_data['informacion_personal']['experiencia']}}</p>
+                <br>
+                <span class="badge badge-secondary span1">Intereses</span>
+                {%for i in my_data['informacion_personal']['intereses']%}
+                    <p>{{i}}</p>
+                {%endfor%}
+            </div>
+            <div>
+                <br>
+                <h4>Informacion profesional</h4>
+                <hr class="linea2">
+                <span class="badge badge-secondary span1">Tecnologias</span>
+                {%for i in my_data['informacion_profesional']['tecnologias']%}
+                    <p>{{i}}</p>
+                {%endfor%}
+                <br>
+                <span class="badge badge-secondary span1">Educacion</span>
+                <p>{{my_data['informacion_profesional']['educacion']}}</p>
+            </div>
+            <div>
+                <br>
+                <h4>Informacion referencias</h4>
+                <hr class="linea2">
+                <span class="badge badge-secondary span1">Referencias laborales</span>
+                <ul>
+                {%for i in my_data['informacion_referencias']['referencias_laborales']%}
+                    <li>{{i}}</li>
+                {%endfor%}
+                </ul>
+                <span class="badge badge-secondary span1">Referencias personales</span>
+                <ul>
+                    {%for i in my_data['informacion_referencias']['referencia_personal']%}
+                        <li>{{i}}</li>
+                    {%endfor%}
+                    </ul>
+            </div>
+        </div>
+{% endblock %}
+
